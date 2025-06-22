@@ -470,6 +470,24 @@ p {
 .technology {
     padding: var(--section-padding);
     background: var(--white-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.technology::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tech-grid" width="15" height="15" patternUnits="userSpaceOnUse"><path d="M 15 0 L 0 0 0 15" fill="none" stroke="rgba(241,95,4,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23tech-grid)"/></svg>');
+    opacity: 0.7;
+}
+
+.technology .container {
+    position: relative;
+    z-index: 1;
 }
 
 .technology-content {
@@ -578,6 +596,24 @@ p {
 .why-us {
     padding: var(--section-padding);
     background: var(--primary-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="why-pattern" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="12.5" cy="12.5" r="1.5" fill="rgba(33,50,52,0.04)"/></pattern></defs><rect width="100" height="100" fill="url(%23why-pattern)"/></svg>');
+    opacity: 0.8;
+}
+
+.why-us .container {
+    position: relative;
+    z-index: 1;
 }
 
 .why-us-content {
@@ -666,6 +702,24 @@ p {
 .coverage {
     padding: var(--section-padding);
     background: var(--white-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.coverage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="coverage-lines" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M0,15 L30,15" stroke="rgba(241,95,4,0.02)" stroke-width="1"/><path d="M15,0 L15,30" stroke="rgba(241,95,4,0.02)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23coverage-lines)"/></svg>');
+    opacity: 0.6;
+}
+
+.coverage .container {
+    position: relative;
+    z-index: 1;
 }
 
 .coverage-content {
@@ -737,6 +791,24 @@ p {
 .contact {
     padding: var(--section-padding);
     background: var(--primary-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="contact-hexagon" width="20" height="20" patternUnits="userSpaceOnUse"><polygon points="10,2 18,7 18,13 10,18 2,13 2,7" fill="none" stroke="rgba(33,50,52,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23contact-hexagon)"/></svg>');
+    opacity: 0.7;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-content {
@@ -813,7 +885,7 @@ p {
 }
 
 .contact-logo-img {
-    width: 120px;
+    width: 180px;
     height: auto;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
     transition: var(--transition);
