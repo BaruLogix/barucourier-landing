@@ -1,56 +1,52 @@
-# BaruCourier Landing Page - Lista de Tareas
+# BaruCourier Landing Page - Lista de Tareas (ACTUALIZACIÓN)
 
-## Fase 1: Análisis de requisitos y configuración inicial
-- [x] Crear estructura de directorios
-- [x] Crear archivos base (HTML, CSS, JS)
-- [ ] Documentar especificaciones técnicas
+## Fase 1: Análisis del documento maestro y assets
+- [x] Leer documento maestro de BaruCourier
+- [x] Analizar nueva paleta de colores profesional
+- [x] Copiar logo oficial al proyecto
+- [x] Identificar cambios necesarios en contenido
 
-## Fase 2: Búsqueda y preparación de assets visuales
-- [x] Buscar imágenes de logística y transporte
-- [x] Generar logo placeholder si es necesario
-- [ ] Crear favicon
-- [x] Optimizar imágenes para web
+## Fase 2: Procesamiento del logo y paleta de colores
+- [ ] Implementar nueva paleta de colores (#213234, #dceaeb, #f15f04, #7b8b8f, #e38241, #abb9bd, #f0b890, #bfc3c7)
+- [ ] Reemplazar logo placeholder por logo oficial
+- [ ] Actualizar favicon con nuevo logo
 
-## Fase 3: Desarrollo de la estructura HTML y contenido
-- [ ] Crear estructura HTML semántica
-- [ ] Implementar navbar con anclas
-- [ ] Desarrollar sección hero
-- [ ] Crear sección de servicios
-- [ ] Implementar propuesta de valor
-- [ ] Desarrollar sección de cobertura
-- [ ] Crear sección de contacto
-- [ ] Implementar footer
+## Fase 3: Actualización de la estructura HTML con nueva información
+- [ ] Actualizar información de contacto (nueva dirección: Km 7 #5-64)
+- [ ] Agregar información sobre BaruLogix (plataforma tecnológica)
+- [ ] Actualizar misión, visión y valores del documento maestro
+- [ ] Incluir información sobre clientes actuales (XDELIVERY SAS, XCARGO)
+- [ ] Actualizar servicios con información más detallada
 
-## Fase 4: Implementación de estilos CSS responsive
-- [ ] Configurar variables CSS para colores
-- [ ] Implementar tipografías (Fredoka One, Poppins)
-- [ ] Estilos para navbar
-- [ ] Estilos para hero section
-- [ ] Estilos para secciones de contenido
-- [ ] Media queries para responsive design
-- [ ] Optimización para móviles
+## Fase 4: Rediseño CSS con nueva paleta y tipografía profesional
+- [ ] Cambiar tipografía de Fredoka One a fuente más seria (Inter, Roboto o similar)
+- [ ] Implementar nueva paleta de colores profesional
+- [ ] Ajustar esquema de colores para mayor seriedad
+- [ ] Mantener diseño responsive
 
-## Fase 5: Desarrollo de funcionalidades JavaScript
-- [ ] Navegación suave entre secciones
-- [ ] Efectos de scroll
-- [ ] Interacciones de botones
-- [ ] Validación de formularios básicos
+## Fase 5: Implementación de íconos profesionales y ajustes JavaScript
+- [ ] Reemplazar emojis por íconos SVG profesionales
+- [ ] Implementar iconografía formal para servicios
+- [ ] Mantener funcionalidades JavaScript existentes
 
-## Fase 6: Optimización SEO y testing local
-- [ ] Implementar meta tags SEO
-- [ ] Optimizar imágenes con alt text
-- [ ] Verificar estructura semántica
-- [ ] Testing en navegador local
-- [ ] Verificar responsive design
+## Fase 6: Testing y validación del nuevo diseño
+- [ ] Verificar diseño profesional en navegador
+- [ ] Comprobar responsive design
+- [ ] Validar nueva información
 
-## Fase 7: Creación del repositorio en GitHub
-- [ ] Configurar Git
-- [ ] Crear repositorio en GitHub
-- [ ] Subir archivos al repositorio
-- [ ] Documentar instrucciones de despliegue
+## Fase 7: Actualización del repositorio GitHub
+- [ ] Commit y push de cambios
+- [ ] Actualizar README con nueva información
 
-## Fase 8: Entrega de resultados al usuario
-- [ ] Preparar documentación final
-- [ ] Entregar enlaces y archivos
-- [ ] Proporcionar instrucciones de Vercel
+## Fase 8: Entrega de resultados actualizados
+- [ ] Entregar página actualizada
+- [ ] Documentar cambios realizados
+
+## INFORMACIÓN CLAVE DEL DOCUMENTO MAESTRO:
+- Fundación: 17 de mayo 2024
+- Ubicación: Km 7 #5-64, Palmira, Valle del Cauca
+- Clientes: XDELIVERY SAS, XCARGO
+- Plataforma: BaruLogix (tecnología propia)
+- Expansión prevista: Florida, Pradera, El Cerrito
+- Representante Legal: Simón Barrera Ruiz
 
