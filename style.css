@@ -319,6 +319,35 @@ p {
 
 .hero-image {
     animation: slideInRight 1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+.logo-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(241, 95, 4, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite alternate;
 }
 
 .hero-img {
@@ -332,12 +361,31 @@ p {
 .services {
     padding: var(--section-padding);
     background: var(--primary-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(33,50,52,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.6;
+}
+
+.services .container {
+    position: relative;
+    z-index: 1;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 2rem;
+    margin-top: 3rem;
 }
 
 .service-card {
@@ -350,6 +398,27 @@ p {
     border: 1px solid rgba(33, 50, 52, 0.08);
     position: relative;
     overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-orange) 0%, var(--accent-orange-light) 100%);
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(33, 50, 52, 0.15);
 }
 
 .service-card::before {
@@ -734,6 +803,24 @@ p {
     border-radius: var(--border-radius-large);
     text-align: center;
     box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.contact-logo {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-logo-img {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    transition: var(--transition);
+}
+
+.contact-logo-img:hover {
+    transform: scale(1.05);
 }
 
 .contact-cta h3 {
@@ -1112,6 +1199,27 @@ button:focus {
     .hero-title,
     .hero-subtitle {
         color: var(--primary-dark);
+    }
+}
+
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px); 
+    }
+    50% { 
+        transform: translateY(-10px); 
+    }
+}
+
+@keyframes pulse {
+    0% { 
+        opacity: 0.5; 
+        transform: translate(-50%, -50%) scale(1); 
+    }
+    100% { 
+        opacity: 0.8; 
+        transform: translate(-50%, -50%) scale(1.1); 
     }
 }
 
